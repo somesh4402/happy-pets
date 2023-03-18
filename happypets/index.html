@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy pets</title>
+
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/d7478a0d6c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar starts  -->
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="" class="navbar-brand ms-lg-5">
+            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i> <i class="fa-solid fa-paw"></i>  Pet Shop</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
+                <a href="#product" class="nav-item nav-link">Product</a>
+                <a href="#contactus" class="nav-item nav-link">contact us</a>
+            </div>
+            <a href=""  onclick="cart()" class="nav-item nav-link nav-contact bg-dark text-white px-5 ms-lg-5"><i class="fa-solid fa-cart-arrow-down"></i>  cart</a>
+        </div>
+        </div>
+    </nav>
+
+
+    <!-- navbar ends  -->
+
+    <!-- home Start -->
+    <div id="home" class="container-fluid bg-dark py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="display-1 text-uppercase text-dark mb-lg-4">happy pets</h1>
+                    <h1 class="text-uppercase text-light mb-lg-4">Make Your Pets Happy</h1>
+                    <p class="fs-4 text-light mb-lg-4">Our pets give us unconditional love. In return, it’s our job to
+                        keep them healthy and happy. </p>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a onclick="readmore()" href="" class="btn btn-outline-light  border-2 py-md-3 px-md-5 me-5">Read More</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- home End -->
+
+
+    <!-- About Start -->
+    <div id="about" class="container-fluid py-5">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded" src="./dogiii.webp"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="border-start border-5 border-dark ps-5 mb-5">
+                        <h6 class="text-dark text-uppercase">About Us</h6>
+                        <h1 class="display-5 text-uppercase mb-0">We Keep Your Pets Happy All Time</h1>
+                    </div>
+                    <h4 class="text-body mb-4">Adequate mental stimulation with toys like food puzzle, chew toys and
+                        playtime.</h4>
+                    <div class="bg-light p-4">
+                        <ul class="nav nav-pills justify-content-between mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item w-50" role="presentation">
+                                <button class="nav-link    text-uppercase w-100 active" id="pills-1-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab"
+                                    aria-controls="pills-1" aria-selected="true">Our Mission</button>
+                            </li>
+                            <li class="nav-item w-50" role="presentation">
+                                <button class="nav-link  text-uppercase w-100" id="pills-2-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2"
+                                    aria-selected="false">Our Vission</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-1" role="tabpanel"
+                                aria-labelledby="pills-1-tab">
+                                <p class="mb-0">"A pet dog is a commitment for 15 odd years. When you promise to love
+                                    and protect your fur baby through all their life stages and make decisions with
+                                    their best interest in mind, even a waterlogged stick will make them happy. Dogs are
+                                    pack animals and they love and protect their kin. Make sure they don’t feel
+                                    abandoned and neglected,"</p>
+                            </div>
+                            <div class="tab-pane  fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                                <p class="mb-0">We have a wide variety of Dog Food Brands with their premium quality wet dog food and dry dog food for your pets. Every brand offers varieties of flavours & proteins so you have plenty to choose for your pet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+<!-- happypets photos  -->
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./slideimg3.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./slideimg1.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./slideimg2.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<!-- photos end  -->
+
+
+
+
+
+
+
+    <!-- Services Start -->
+    <div id="service" class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-dark ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-dark  text-uppercase">Services</h6>
+                <h1 class="display-5 text-uppercase mb-0">Our Excellent Pet Care Services</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="fa-solid  display-1  me-4 fa-house"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Boarding</h5>
+                            <p>"Worried where to keep your pet when you’re travelling or have a function at home or someone is sick and want to keep your dog somewhere just like home? You have the answer right here!!</p>
+                            <a href="" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="fa-solid display-1  me-4  fa-bone"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Feeding</h5>
+                            <p>Easy home delivery & personalized food for your dog . feeding ur dog and pets can easily avalaible hear.</p>
+                            <a href="" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="fa-solid display-1  me-4 fa-dog"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Grooming</h5>
+                            <p>"We are Providing Doorstep Pet Services. Pet grooming, dog training, pet homest make ur dog feel happy with our service.</p>
+                            <a href="" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="fa-solid display-1  me-4 fa-cat"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Training</h5>
+                            <p>we are providing pet training in our training center We are Providing Doorstep Pet Services. Pet grooming, dog training, .</p>
+                            <a href="" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="fa-solid  display-1  me-4  fa-paw"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Exercise</h5>
+                            <p>pet exercise this thing made our dog happy living We are Providing Doorstep Pet Services. Pet grooming, dog training, . classes are free for pet exercise.</p>
+                            <a href="" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">Read More</a>>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="fa-solid  display-1  me-4  fa-virus-covid"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Pet Treatment</h5>
+                            <p>we have best doctors for treatment of our pets so feel free to aply .We are Providing Doorstep Pet Services. Pet grooming, dog training, .</p>
+                            <a href="" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Products Start -->
+    <div id="product" class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-dark ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-dark text-uppercase">Products</h6>
+                <h1 class="display-5 text-uppercase mb-0">Products For Your Best Friends</h1>
+            </div>
+           
+            <div class="row">
+                <div class="col-md-4 service-cols">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product1.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pedigree Meat Jerky Adult Dog Treat - Roasted Lamb (Pack Of 12)
+                                </h5>
+                            <p class="card-text"> Long-lasting, delicious & made from real ingredients</p>
+                            <h6 class="text-primery"><b>MRP : ₹1,512.00</b> (10% Off)</h6>
+                                <a href="https://headsupfortails.com/products/pedigree-meat-jerky-adult-dog-treat-roasted-lamb-pack-of-12" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 service-cols">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product2.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Royal Canin Maxi Breed Wet Puppy Food - 140 g</h5>
+                            <p class="card-text">Rich in nutrients, balanced & helps with growth</p>
+                            <h6 class="text-primery bg-primery"><b>MRP :₹127.60</b> (12% Off)</h6>
+                                <a href="https://headsupfortails.com/products/royal-canin-maxi-puppy-dog-wet-food-10x140-gms-1-4-kg" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 service-cols">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product3.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">JerHigh Chicken Grilled in Gravy Wet DogFood 120 g</h5>
+                            <p class="card-text">Natural, mouth-watering & easy to digest</p>
+                            <h6><b>MRP : ₹840.00</b>
+                                incl. of all taxes</h6>
+                                <a href="https://headsupfortails.com/products/jerhigh-chicken-grilled-in-gravy-wet-dog-food-120-g" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 service-cols">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product5.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Arden Grange Weaning/Puppy Food - Fresh Chicken & Rice</h5>
+                            <p class="card-text">High-protein, easy to digest & perfect for fussy eaters.</p>
+                            <h6><b>MRP : ₹1,880.00</b>
+                                incl. of all taxes</h6>
+                                <a href="https://headsupfortails.com/products/arden-grange-weaning-puppy-food-fresh-chicken-rice-available-in-multiple-sizes" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">add to cart</a>
+                        </div>
+                    </div>
+                </div><div class="col-md-4 service-cols">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./product6.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Taste of the Wild Pacific Stream Grain Free Dry Puppy Food - Smoked Salmon</h5>
+                            <p class="card-text">Nutrient-packed, species-specific, egg-free dog food.</p>
+
+                            <h6><b>MRP : ₹1,900.00 </b>incl. of all taxes</h6>
+                                <a href="https://headsupfortails.com/products/taste-of-the-wild-dry-puppy-food-grain-free-pacific-stream-with-smoked-salmon" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">add to cart</a>
+                        </div>
+                    </div>
+                </div><div class="col-md-4 service-cols">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./all products.jpg.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Best Dog Food Collection for Small, Medium, Large Breed Dogs and Puppies</h5>
+                            <h6 class="card-text">dry foods , wet foods ,  grainy foods , puppy foods ,, all types of collections </h6>
+                                <a href="https://headsupfortails.com/collections/dog-food" class="btn btn-outline-dark  border-2 py-md-3 px-md-5 me-5">see products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- Products End -->
+
+<!-- Contact Start -->
+<div id="contactus" class="container-fluid pt-5">
+    <div class="container">
+        <div class="border-start border-5 border-dark ps-5 mb-5" style="max-width: 600px;">
+            <h6 class="text-dark text-uppercase">Contact Us</h6>
+            <h1 class="display-5 text-uppercase mb-0">Please Feel Free To Contact Us</h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <form>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <input type="text" class="form-control bg-light border-0 px-4" placeholder="Your Name" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <input  type="email" class="form-control bg-light border-0 px-4" placeholder="Your Email" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control bg-light border-0 px-4" placeholder="Subject" style="height: 55px;">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control bg-light border-0 px-4 py-3" rows="8" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-dark w-100 py-3" type="submit">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-5">
+                <div class="bg-light mb-5 p-5">
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                        <div class="text-start">
+                            <h6 class="text-uppercase mb-1">Our Office</h6>
+                            <span>shivaji nagar , nanded</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                        <div class="text-start">
+                            <h6 class="text-uppercase mb-1">Email Us</h6>
+                            <span>happypets@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                        <div class="text-start">
+                            <h6 class="text-uppercase mb-1">Call Us</h6>
+                            <span>+91 7559459980</span>
+                        </div>
+                    </div>
+                    <div>
+                        <iframe class="position-relative w-100"
+                            src="https://goo.gl/maps/D84mzt1VpTV5gViW9"
+                            frameborder="0" style="height: 205px; border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+
+ <!-- Footer Start -->
+ <div class="container-fluid bg-light mt-5 py-5">
+    <div class="container pt-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-dark ps-3 mb-4">Get In Touch</h5>
+                <p class="mb-4">oppsite to center point , shivaji nagar , nanded</p>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>shivaji nagar , nanded</p>
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>happypets@gmail.com</p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+91 7559459980</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-dark ps-3 mb-4">Quick Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body  mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-dark ps-3 mb-4">Popular Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="#home"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-body mb-2" href="#about"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-body mb-2" href="#service"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-body" href="#contactus"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-uppercase border-start border-5 border-dark ps-3 mb-4">Newsletter</h5>
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control p-3" placeholder="Your Email">
+                        <button class="btn btn-dark">Sign Up</button>
+                    </div>
+                </form>
+                <h6 class="text-uppercase mt-4 mb-3">Follow Us</h6>
+                <div class="d-flex">
+                    <a class="btn btn-outline-dark btn-square me-2" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="btn btn-outline-dark btn-square me-2" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="btn btn-outline-dark btn-square me-2" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="btn btn-outline-dark btn-square" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-12 text-center text-body">
+                <a class="text-body" href="">Terms & Conditions</a>
+                <span class="mx-1">|</span>
+                <a class="text-body" href="">Privacy Policy</a>
+                <span class="mx-1">|</span>
+                <a class="text-body" href="">Customer Support</a>
+                <span class="mx-1">|</span>
+                <a class="text-body" href="">Payments</a>
+                <span class="mx-1">|</span>
+                <a class="text-body" href="">Help</a>
+                <span class="mx-1">|</span>
+                <a class="text-body" href="">FAQs</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white-50 py-4">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-md-0">&copy; <a class="text-white" href="#">happy pets</a>. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Developed by <a class="text-white" href="">somesh</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+
+    <!-- script  -->
+
+<script src="./script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+  
+</body>
+
+</html>
